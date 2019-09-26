@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Liste des lettres tapées-->
+    <TextView
+        android:id="@+id/tv_typed_letters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+
+    Image permettant d'afficher l'avancée du nombre d'erreur (le pendu apparaît de plus en plus)
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_launcher_background" />
+
+    <!--LinearLayout affichant les lettres du mot à trouver en "_", et celles déjà trouvées normalement-->
+    <LinearLayout
+        android:id="@+id/ll_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_image"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"></LinearLayout>
+
+    <!--Bouton permettant d'afficher une pop-up afin de proposer un mot-->
+    <Button
+        android:id="@+id/btn_suggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ll_word"
+        android:layout_alignRight="@+id/ll_word"
+        android:text="@string/suggest"
+        android:textSize="9dp" />
+
+    <!--Champ de texte permettant de saisir les lettres à jouer-->
+    <EditText
+        android:id="@+id/et_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_word"
+        android:layout_centerHorizontal="true"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:inputType="textCapCharacters"
+        android:maxLength="1"/>
+</RelativeLayout>

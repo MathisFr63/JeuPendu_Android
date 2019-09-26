@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mafrizot1.pendutest">
+
+    <!--Ajout des permissions pour l'utilisation du Bluetooth-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".StartActivity"
+            android:windowSoftInputMode="stateVisible">
+            <!--Fait apparaître le clavier automatiquement lorsqu'on lance la vue-->
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StartActivity" />
+        </activity>
+
+        <activity
+            android:name=".MultiActivity"
+            android:parentActivityName=".StartActivity"
+            android:windowSoftInputMode="stateVisible">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StartActivity" />
+        </activity>
+
+        <activity
+            android:name=".BTActivity"
+            android:parentActivityName=".StartActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StartActivity" />
+        </activity>
+
+    </application>
+</manifest>

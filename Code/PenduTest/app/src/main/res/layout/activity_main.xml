@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BTActivity">
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/onoff" />
+
+    <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="@string/enablediscoverable" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnDiscover"
+        android:text="@string/discover" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btnStartConnection"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnStartConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFindUnpairedDevices"
+        android:layout_marginTop="10dp"
+        android:text="@string/startconnection" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/lvNewDevices"
+        android:hint="@string/enterText" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvNewDevices"
+        android:layout_toRightOf="@id/editText"
+        android:text="@string/send"
+        android:layout_toEndOf="@id/editText" />
+
+
+</RelativeLayout>

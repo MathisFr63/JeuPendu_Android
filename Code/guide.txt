@@ -1,0 +1,2 @@
+https://developer.android.com/training/permissions/requesting.html#java -> depuis android 6.0 il faut demander la permition dans la runtime
+https://developer.android.com/guide/topics/connectivity/bluetooth.html#FindingDevices

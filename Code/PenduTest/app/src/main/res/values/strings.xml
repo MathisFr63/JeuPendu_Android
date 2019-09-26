@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PenduTest</string>
+    <string name="send">Envoyer</string>
+    <string name="replay">Rejouer</string>
+    <string name="singleplayer">1 Joueur</string>
+    <string name="multiplayer">Multijoueur</string>
+    <string name="onoff">ON / OFF</string>
+    <string name="enablediscoverable">Enable Discoverable</string>
+    <string name="discover">Discover</string>
+    <string name="startconnection">Start Connection</string>
+    <string name="enterText">Enter Text</string>
+    <string name="suggest">Proposer mot</string>
+</resources>

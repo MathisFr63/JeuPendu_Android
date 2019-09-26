@@ -1,0 +1,5 @@
+Il faut faire en sorte que quand on envoi un mot, notre jeu ce lance aussi si l'autre joueur l'a bien reçu.
+
+Ajouter le fait que quand on propose un mot (après avoir perdu/gagné seulement) et que l'on est en multijoueur, l'autre joueur le reçoive aussi et lance le jeu.
+
+Sauvegarder les lettres tapées et trouvées lorsque l'on tourne l'écran.
